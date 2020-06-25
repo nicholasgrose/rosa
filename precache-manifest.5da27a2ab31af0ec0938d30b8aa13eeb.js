@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fb8237b12baa34c5345c4f36e7ae42d",
+    "revision": "7f445c73acfae3971d218a18dd7b1482",
     "url": "/rosa/index.html"
   },
   {
-    "revision": "714f3d43ea9a8b5bbe17",
-    "url": "/rosa/static/css/main.523f09c5.chunk.css"
+    "revision": "7efc6ce495fa31fab17f",
+    "url": "/rosa/static/css/main.125e921d.chunk.css"
   },
   {
     "revision": "bc92c7a9c036019be5f5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rosa/static/js/2.54293d3c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "714f3d43ea9a8b5bbe17",
-    "url": "/rosa/static/js/main.b4615498.chunk.js"
+    "revision": "7efc6ce495fa31fab17f",
+    "url": "/rosa/static/js/main.a20df6db.chunk.js"
   },
   {
     "revision": "77914d7c63e86d12f8b0",
