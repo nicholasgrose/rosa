@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rosa/static/css/main.523f09c5.chunk.css",
+    "main.js": "/rosa/static/js/main.29cf9289.chunk.js",
+    "main.js.map": "/rosa/static/js/main.29cf9289.chunk.js.map",
+    "runtime-main.js": "/rosa/static/js/runtime-main.ce7b63d9.js",
+    "runtime-main.js.map": "/rosa/static/js/runtime-main.ce7b63d9.js.map",
+    "static/js/2.54293d3c.chunk.js": "/rosa/static/js/2.54293d3c.chunk.js",
+    "static/js/2.54293d3c.chunk.js.map": "/rosa/static/js/2.54293d3c.chunk.js.map",
+    "index.html": "/rosa/index.html",
+    "precache-manifest.bc83fab4de07e20c9ecfb20963c86348.js": "/rosa/precache-manifest.bc83fab4de07e20c9ecfb20963c86348.js",
+    "service-worker.js": "/rosa/service-worker.js",
+    "static/css/main.523f09c5.chunk.css.map": "/rosa/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.54293d3c.chunk.js.LICENSE.txt": "/rosa/static/js/2.54293d3c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/rosa/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce7b63d9.js",
+    "static/js/2.54293d3c.chunk.js",
+    "static/css/main.523f09c5.chunk.css",
+    "static/js/main.29cf9289.chunk.js"
+  ]
+}
