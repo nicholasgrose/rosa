@@ -1,18 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import backgroundImage from './DSC_0998.jpg';
 import './App.css';
+
+const background = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+};
 
 function App(): JSX.Element {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    This website is under construction, sorry! -{' '}
-                    <em>Nicholas Rose</em>
-                </p>
-            </header>
-        </div>
+        <Box style={background} display="flex" width="100vw" height="100vh">
+            <Box display="flex" alignContent="center" width="100%" height="100%">
+                <Container maxWidth="lg">
+                    <Paper className="main-page page-paper" square />
+                </Container>
+            </Box>
+        </Box>
     );
 }
 
