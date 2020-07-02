@@ -1,0 +1,10 @@
+.main-page-container {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.main-page {
+    overflow-y: auto;
+    min-height: 100%;
+    max-height: 100%;
+}
