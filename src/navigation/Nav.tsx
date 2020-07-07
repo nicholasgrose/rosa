@@ -15,6 +15,11 @@ function Nav(): JSX.Element {
             <AppBar style={navBar}>
                 <Toolbar>
                     <Button>Home</Button>
+                    <Button>About Me (WIP)</Button>
+                    <Button>Resumé (WIP)</Button>
+                    <Button>Gallery (WIP)</Button>
+                    <Button>Thoughts (WIP)</Button>
+                    <Button>Contact Me (WIP)</Button>
                 </Toolbar>
             </AppBar>
             <Toolbar />

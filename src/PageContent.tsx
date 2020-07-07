@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 import Nav from './navigation/Nav';
 import Page from './routes/Page';
-import backgroundImage from './DSC_0998.jpg';
+import backgroundImage from './schwangau-forest.jpg';
 
 const background = {
     backgroundImage: `url(${backgroundImage})`,

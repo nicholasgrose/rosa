@@ -13,7 +13,7 @@ function Page(): JSX.Element {
     return (
         <Container className="main-page-container" maxWidth="lg">
             <Paper className="main-page" style={mainPage} square>
-                <Box className="page" py="5%" px="10%">
+                <Box className="page" py="4%" px="10%">
                     <HomePage />
                 </Box>
             </Paper>
