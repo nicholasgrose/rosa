@@ -9,7 +9,7 @@ function HomePage(): JSX.Element {
         <Grid container spacing={3}>
             <Grid item xs={12} justify="center">
                 <Typography variant="h2" align="center">
-                    <u>Nicholas Rose</u>
+                    Nicholas Rose
                 </Typography>
             </Grid>
             <Grid item xs={12} justify="center">
