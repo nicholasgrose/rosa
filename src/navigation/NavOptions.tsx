@@ -41,11 +41,7 @@ function NavOptions(props: NavOptionsProps): JSX.Element {
             </>
         );
     }
-    return (
-        <Box alignItems="center">
-            {content}
-        </Box>
-    );
+    return <Box alignItems="center">{content}</Box>;
 }
 
 export default NavOptions;

@@ -16,9 +16,9 @@ function HomePage(): JSX.Element {
             <Grid item xs={12}>
                 <Box m="1%">
                     <img
-                    className="profile-image"
-                    src={profileImage}
-                    alt="Myself inside of a kayak"
+                        className="profile-image"
+                        src={profileImage}
+                        alt="Myself inside of a kayak"
                     />
                 </Box>
             </Grid>
