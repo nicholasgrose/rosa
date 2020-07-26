@@ -12,8 +12,5 @@
     ],
     "env": {
         "jest": true
-    },
-    "rules": {
-        "prefer-destructuring":"off"
     }
 }

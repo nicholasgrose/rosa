@@ -8,7 +8,7 @@ function NavTitle(): JSX.Element {
             <Box display="flex" alignItems="center">
                 <img src={logo} alt="Logo" height="55" width="55" />
             </Box>
-            <Box flexGrow="1" ml="2%" fontWeight="100" fontSize="1.7rem">
+            <Box flexGrow="1" ml="1rem" fontWeight="100" fontSize="1.7rem">
                 Nicholas Rose
             </Box>
         </Box>

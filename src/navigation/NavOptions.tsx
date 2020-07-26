@@ -1,47 +1,50 @@
 import React from 'react';
 import { Box, Button } from '@material-ui/core';
-
-function ignore(event: React.MouseEvent): void {
-    event.preventDefault();
-}
+import ActivePage from '../ActivePage';
 
 interface NavOptionsProps {
-    hovering: boolean;
+    changePage: (newPage: ActivePage) => void;
+}
+
+function triggerPageChange(
+    props: NavOptionsProps,
+    newPage: ActivePage
+): (event: React.MouseEvent) => void {
+    return (event: React.MouseEvent): void => {
+        event.preventDefault();
+        props.changePage(newPage);
+    };
 }
 
 function NavOptions(props: NavOptionsProps): JSX.Element {
-    let content = null;
-    if (props.hovering) {
-        content = (
-            <>
-                <Button href="/rosa/home" onClick={ignore}>
-                    Home
-                </Button>
-                <Button href="/rosa/about" onClick={ignore}>
-                    About Me (WIP)
-                </Button>
-                <Button href="/rosa/resume" onClick={ignore}>
-                    Resumé (WIP)
-                </Button>
-                <Button href="/rosa/gallery" onClick={ignore}>
-                    Gallery (WIP)
-                </Button>
-                <Button href="/rosa/books" onClick={ignore}>
-                    Books (WIP)
-                </Button>
-                <Button href="/rosa/music" onClick={ignore}>
-                    Music (WIP)
-                </Button>
-                <Button href="/rosa/thoughts" onClick={ignore}>
-                    Thoughts (WIP)
-                </Button>
-                <Button href="/rosa/contact" onClick={ignore}>
-                    Contact Me (WIP)
-                </Button>
-            </>
-        );
-    }
-    return <Box alignItems="center">{content}</Box>;
+    return (
+        <Box>
+            <Button onClick={triggerPageChange(props, ActivePage.HOME)}>
+                Home
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.ABOUT)}>
+                About Me (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.RESUME)}>
+                Resumé (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.GALLERY)}>
+                Gallery (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.BOOKS)}>
+                Books (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.MUSIC)}>
+                Music (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.THOUGHTS)}>
+                Thoughts (WIP)
+            </Button>
+            <Button onClick={triggerPageChange(props, ActivePage.CONTACT)}>
+                Contact Me (WIP)
+            </Button>
+        </Box>
+    );
 }
 
 export default NavOptions;

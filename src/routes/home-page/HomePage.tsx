@@ -1,9 +1,9 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import { Box } from '@material-ui/core';
 import profileImage from '../../self-in-kayak-square.jpg';
 import './HomePage.css';
-import { Box } from '@material-ui/core';
 
 function HomePage(): JSX.Element {
     return (
@@ -14,7 +14,7 @@ function HomePage(): JSX.Element {
                 </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Box m="1%">
+                <Box mt="1%" mb="3%">
                     <img
                         className="profile-image"
                         src={profileImage}

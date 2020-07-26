@@ -2,47 +2,21 @@ import React from 'react';
 import { Box } from '@material-ui/core';
 import NavTitle from './NavTitle';
 import NavOptions from './NavOptions';
+import ActivePage from '../ActivePage';
 
-interface NavContentState {
-    hovering: boolean;
+interface NavContentProps {
+    changePage: (newPage: ActivePage) => void;
 }
 
-class NavContent extends React.Component<{}, NavContentState, {}> {
-    constructor(props: {}) {
-        super(props);
-        this.state = {
-            hovering: false,
-        };
-        this.handleMouseEnter = this.handleMouseEnter.bind(this);
-        this.handleMouseLeave = this.handleMouseLeave.bind(this);
-    }
+function NavContent(props: NavContentProps): JSX.Element {
+    const { changePage: onPageChange } = props;
 
-    private handleMouseEnter(): void {
-        this.setState({
-            hovering: true,
-        });
-    }
-
-    private handleMouseLeave(): void {
-        this.setState({
-            hovering: false,
-        });
-    }
-
-    public render(): JSX.Element {
-        return (
-            <Box
-                display="flex"
-                alignItems="center"
-                width="100%"
-                onMouseEnter={this.handleMouseEnter}
-                onMouseLeave={this.handleMouseLeave}
-            >
-                <NavTitle />
-                <NavOptions hovering={this.state.hovering} />
-            </Box>
-        );
-    }
+    return (
+        <Box display="flex" alignItems="center" width="100%">
+            <NavTitle />
+            <NavOptions changePage={onPageChange} />
+        </Box>
+    );
 }
 
 export default NavContent;
