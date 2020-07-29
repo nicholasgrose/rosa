@@ -7,10 +7,10 @@ function App(): JSX.Element {
         palette: {
             type: 'dark',
             primary: {
-                main: '#2e7d32',
+                main: '#028e53',
             },
             secondary: {
-                main: '#03a9f4',
+                main: '#f44336',
             },
         },
     });

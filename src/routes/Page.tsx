@@ -2,6 +2,12 @@ import React from 'react';
 import { Container, Paper, useTheme, fade, Box } from '@material-ui/core';
 import HomePage from './home-page/HomePage';
 import AboutMe from './about-me/AboutMe';
+import Resume from './resume/Resume';
+import Gallery from './gallery/Gallery';
+import Books from './books/Books';
+import Music from './music/Music';
+import Contact from './contact/Contact';
+import Thoughts from './thoughts/Thoughts';
 import ActivePage from '../ActivePage';
 import './Page.css';
 
@@ -9,18 +15,23 @@ interface PageProps {
     currentPage: ActivePage;
 }
 
+const pageMap: Map<ActivePage, JSX.Element> = new Map([
+    [ActivePage.HOME, <HomePage />],
+    [ActivePage.ABOUT, <AboutMe />],
+    [ActivePage.RESUME, <Resume />],
+    [ActivePage.GALLERY, <Gallery />],
+    [ActivePage.BOOKS, <Books />],
+    [ActivePage.MUSIC, <Music />],
+    [ActivePage.THOUGHTS, <Thoughts />],
+    [ActivePage.CONTACT, <Contact />],
+]);
+
 function getCurrentPage(currentPage: ActivePage): JSX.Element | null {
-    switch (currentPage) {
-        case ActivePage.HOME: {
-            return <HomePage />;
-        }
-        case ActivePage.ABOUT: {
-            return <AboutMe />;
-        }
-        default: {
-            return null;
-        }
+    const page = pageMap.get(currentPage);
+    if (!page) {
+        return null;
     }
+    return page;
 }
 
 function Page(props: PageProps): JSX.Element {
