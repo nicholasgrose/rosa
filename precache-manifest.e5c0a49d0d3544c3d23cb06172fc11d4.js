@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59433ccb836248f57f085865562a0a6b",
+    "revision": "7910b27978d17864d48afc804b631fb8",
     "url": "/rosa/index.html"
   },
   {
-    "revision": "ba5890d507b192fbd57d",
+    "revision": "32318babb4988062579a",
     "url": "/rosa/static/css/main.6636d26f.chunk.css"
   },
   {
-    "revision": "7b1451b41443fc42c5c1",
-    "url": "/rosa/static/js/2.d3e44c21.chunk.js"
+    "revision": "8495857f7f61339af4a8",
+    "url": "/rosa/static/js/2.96c70f72.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/rosa/static/js/2.d3e44c21.chunk.js.LICENSE.txt"
+    "url": "/rosa/static/js/2.96c70f72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba5890d507b192fbd57d",
-    "url": "/rosa/static/js/main.b07e2cd3.chunk.js"
+    "revision": "32318babb4988062579a",
+    "url": "/rosa/static/js/main.2dc21d36.chunk.js"
   },
   {
     "revision": "77914d7c63e86d12f8b0",
     "url": "/rosa/static/js/runtime-main.ce7b63d9.js"
   },
   {
-    "revision": "1abeb42ff1803cc652b732693f477abb",
-    "url": "/rosa/static/media/initial-logo.1abeb42f.svg"
+    "revision": "0889f3a186301cabfb90154df8a8a58c",
+    "url": "/rosa/static/media/initial-logo.0889f3a1.svg"
   },
   {
     "revision": "9f9b3b962e40cc8e6c739942e96ab5d2",
