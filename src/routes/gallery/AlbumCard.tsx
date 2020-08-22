@@ -1,21 +1,14 @@
 import React from 'react';
 import { Card, CardActionArea, Box } from '@material-ui/core';
-import PortraitAlbumPicture from './images/portraits/meghan_and_greg.jpg';
 import AlbumTitle from './AlbumTitle';
+import AlbumCardProps from './AlbumCardProps';
 
 interface AlbumCardState {
     hovering: boolean;
 }
 
-const albumPictureStyle = {
-    backgroundImage: `url(${PortraitAlbumPicture})`,
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-};
-
-class AlbumCard extends React.Component<{}, AlbumCardState, {}> {
-    constructor(props: {}) {
+class AlbumCard extends React.Component<AlbumCardProps, AlbumCardState, {}> {
+    constructor(props: AlbumCardProps) {
         super(props);
         this.state = {
             hovering: false,
@@ -39,6 +32,13 @@ class AlbumCard extends React.Component<{}, AlbumCardState, {}> {
 
     render(): JSX.Element {
         const { hovering } = this.state;
+        const { albumName, thumbnailPath } = this.props;
+        const albumPictureStyle = {
+            backgroundImage: `url(${thumbnailPath})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+        };
         return (
             <Card
                 onMouseEnter={this.onHoverEnter}
@@ -53,7 +53,7 @@ class AlbumCard extends React.Component<{}, AlbumCardState, {}> {
                         style={albumPictureStyle}
                     >
                         <Box flexGrow="1" />
-                        <AlbumTitle hovering={hovering} />
+                        <AlbumTitle hovering={hovering} albumName={albumName} />
                     </Box>
                 </CardActionArea>
             </Card>

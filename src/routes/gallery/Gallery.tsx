@@ -1,16 +1,17 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import AlbumCard from './AlbumCard';
+import Typography from '@material-ui/core/Typography';
+import AlbumList from './AlbumList';
 
 function Gallery(): JSX.Element {
     return (
         <Box>
-            <Grid container>
-                <Grid item xs={12} sm={6} md={4} lg={4}>
-                    <AlbumCard />
-                </Grid>
-            </Grid>
+            <Typography variant="h2" align="center">
+                The Gallery
+            </Typography>
+            <Box mt="2%">
+                <AlbumList />
+            </Box>
         </Box>
     );
 }

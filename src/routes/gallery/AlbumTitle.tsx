@@ -4,10 +4,11 @@ import Typography from '@material-ui/core/Typography';
 
 interface AlbumTitleProps {
     hovering: boolean;
+    albumName: string;
 }
 
 function AlbumTitle(props: AlbumTitleProps): JSX.Element {
-    const { hovering } = props;
+    const { hovering, albumName } = props;
     const titleTypographyStyle = {
         fontWeight: 300,
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -21,7 +22,7 @@ function AlbumTitle(props: AlbumTitleProps): JSX.Element {
                     component="h2"
                     style={titleTypographyStyle}
                 >
-                    Portraits
+                    {albumName}
                 </Typography>
             </Collapse>
         </Box>
